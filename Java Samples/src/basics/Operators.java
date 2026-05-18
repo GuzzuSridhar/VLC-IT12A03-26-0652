@@ -14,12 +14,31 @@ public class Operators {
         // Arithmetic Operators
         // + - * / % ++ --
 
-        int x = 10, y = 20;
+        int x = 10, y = 20, res = 0;
 
         System.out.println(x + y); // addition
         System.out.println(x - y); // Subtraction
         System.out.println(x * y); // Multiplication
         System.out.println(x / y); // Division
         System.out.println(x % y); // Modulus
+        System.out.println("----------------Increment and Decrement----------");
+        // increment (post and pre)
+        res = x++; // use the current value of x in the expression and then increment
+        System.out.println(res); // 10
+        System.out.println(x); // 11
+
+        res = ++x; // first increment and then use the value of x in this expression
+        System.out.println(res); // 12
+        System.out.println(x); // 12
+
+        // decrement (post and pre)
+        res = x--; // use the current value of x in the expression and then decrement
+        System.out.println(res); // 12
+        System.out.println(x); // 11
+
+        res = --x; // first decrement and then use the value of x in this expression
+        System.out.println(res); // 10
+        System.out.println(x); // 10
+
     }
 }
