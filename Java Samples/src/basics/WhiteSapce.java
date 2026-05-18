@@ -6,7 +6,7 @@ public class WhiteSapce {
                 "sample of" +
                 "multi line code";
 
-        // all white space is trimmed out by the compiler.
+        // all white space is trimmed out by the compiler (by default).
 
         System.out.println(description);
     }
