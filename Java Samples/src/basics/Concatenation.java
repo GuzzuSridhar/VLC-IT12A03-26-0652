@@ -23,6 +23,5 @@ public class Concatenation {
 
         // use brackets to prioritize the airthemetic operations
         System.out.println("The total income of " + fName + " " + lName + " is " + (sal + com));
-
     }
 }
