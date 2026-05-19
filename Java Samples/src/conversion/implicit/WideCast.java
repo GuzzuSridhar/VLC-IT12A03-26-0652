@@ -2,6 +2,7 @@ package conversion.implicit;
 
 public class WideCast {
     public static void main(String[] args) {
+        // Casting means convert value from one datatype to other
         // Implicit casting
         // Also known as Widening
         // convert a smaller type to a larger one
