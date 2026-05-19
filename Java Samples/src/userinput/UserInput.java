@@ -8,7 +8,7 @@ public class UserInput {
         Scanner scan = new Scanner(System.in);
 
         // Capture Strings (one word)
-        String name, desig;
+        String name, desig, addr;
         System.out.print("Enter your Name: ");
         name = scan.next(); // takes text input
         System.out.println("Welcome " + name);
@@ -31,6 +31,14 @@ public class UserInput {
         System.out.print("Enter your salary ");
         sal = scan.nextFloat();
         System.out.println(sal);
+
+        scan.nextLine();
+
+        // Capture Strings (line of text)
+        System.out.print("Enter your Address: ");
+
+        addr = scan.nextLine(); // takes text input
+        System.out.println(addr);
 
         scan.close();
     }
