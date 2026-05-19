@@ -94,5 +94,29 @@ public class Operators {
         // less than equals check
         System.out.println(x <= 10);
 
+        System.out.println("----------------Logical Operators----------");
+
+        // Logical Operators
+        // the logical operators are to be used to compound one or more comparision
+        // operators
+        // the output of a expression with a logical operator will always be boolean
+        // && || !
+
+        System.out.println(x > 10 && y < 20); // logial AND
+        System.out.println(x > 10 || y < 20); // logial OR
+        System.out.println(!(x > 10 || y < 20)); // logial NOT
+
+        // bitwise
+        // & | ~
+        System.out.println(x & y); // bitwise AND
+        System.out.println(x | y); // bitwise OR
+        System.out.println(~x); // bitwise NOT
+
+        // Shift Operators
+        System.out.println("----------------Shift Operators----------");
+        System.out.println(x << 2);
+        System.out.println(x >> 2);
+        System.out.println(x >>> 2);
+
     }
 }
