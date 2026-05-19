@@ -5,7 +5,7 @@ public class TernaryOperator {
         // shorthand for writing the if-else
         // syntax--> condition ? value_if_true : value_if_false
 
-        int age = 15, num = 10;
+        int age = 15, num = 10, marks = 75;
 
         String result = age >= 18 ? "Adult" : "Minor";
         System.out.println(result);
@@ -17,6 +17,13 @@ public class TernaryOperator {
         System.out.println(res);
         // alternatively
         System.out.println((num % 2 == 0) ? "Even" : "Odd");
+
+        // Nested Ternary
+        // Grade system
+        String grade = (marks >= 90) ? "A" : (marks >= 75) ? "B" : (marks >= 50) ? "C" : "Fail";
+        System.out.println(grade);
+        // alternatively
+        System.out.println((marks >= 90) ? "A" : (marks >= 75) ? "B" : (marks >= 50) ? "C" : "Fail");
 
     }
 }
