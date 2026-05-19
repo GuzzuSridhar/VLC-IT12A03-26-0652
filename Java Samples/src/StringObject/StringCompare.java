@@ -20,5 +20,8 @@ public class StringCompare {
         // case insensitive compare
         System.out.println(sone.equalsIgnoreCase(stwo));
         System.out.println(sthree.equalsIgnoreCase(sfour));
+
+        // Avoid using, but == can also be used
+        System.out.println(sone == stwo);
     }
 }
