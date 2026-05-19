@@ -72,5 +72,27 @@ public class Operators {
         x %= 10;
         System.out.println(x);
 
+        System.out.println("----------------Comparision Operators----------");
+        // the output of a expression with a comparision operator will always be boolean
+        // == != > >= < <=
+
+        // equality check
+        System.out.println(x == 10);
+
+        // inequality check
+        System.out.println(x != 10);
+
+        // greater than check
+        System.out.println(x > 10);
+
+        // greater than equals check
+        System.out.println(x >= 10);
+
+        // less than check
+        System.out.println(x < 10);
+
+        // less than equals check
+        System.out.println(x <= 10);
+
     }
 }
