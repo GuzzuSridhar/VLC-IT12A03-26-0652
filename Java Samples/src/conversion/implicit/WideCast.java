@@ -1,6 +1,7 @@
 package conversion.implicit;
 
 public class WideCast {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // Casting means convert value from one datatype to other
         // Implicit casting
