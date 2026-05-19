@@ -12,7 +12,22 @@ public class DeclareArrays {
         // Method 1
         // declare an array without initialization
         String[] names = new String[5]; // declared an array of 5 String elements
+        // String names[] = new String[5]; // declared an array of 5 String elements
+
+        // Method 2
+        // declare and Initialize
+        int[] age = { 10, 26, 78, 67, 55 };
+
+        // Method 3
+        // declare and Initialize
+        int[] x = new int[] { 10, 26, 78, 67, 55 };
+
+        // print the length of the array
+
         System.out.println(names.length);
+        System.out.println(age.length);
+        System.out.println(x.length);
+
         // print the values of the empty array
         System.out.println(names[0]);
         System.out.println(names[1]);
@@ -39,8 +54,16 @@ public class DeclareArrays {
 
         System.out.println("-----------Print with Enhanced For Loop-------------");
         // special for loop (enhanced for loop) to work with arrays
-        for (String x : names) {
-            System.out.println(x);
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        for (int i : x) {
+            System.out.println(i);
+        }
+
+        for (int i : age) {
+            System.out.println(i);
         }
 
     }
