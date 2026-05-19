@@ -49,5 +49,39 @@ public class SwitchCase {
             default:
                 System.out.println("invalid Entry");
         }
+
+        // Modern Switch Expression (Version 14 and above)
+        switch (dow) {
+            case 1 -> System.out.println("Monday");
+            case 2 -> System.out.println("Monday");
+            case 3 -> System.out.println("Monday");
+            case 4 -> System.out.println("Monday");
+            case 5 -> System.out.println("Monday");
+            case 6 -> System.out.println("Monday");
+            case 7 -> System.out.println("Monday");
+            default -> System.out.println("Invalid Entry");
+        }
+
+        // assign the output of a switch to a variable (Switch in Expression)
+        String day = switch (dow) {
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            case 3 -> "wednesday";
+            case 4 -> "Thursday";
+            case 5 -> "Friday";
+            case 6 -> "Saturday";
+            case 7 -> "Sunday";
+            default -> "Invalid entry";
+        };
+        System.out.println(day);
+
+        // Multiple labels in once case
+        String type = switch (dow) {
+            case 1, 2, 3, 4, 5 -> "Workday";
+            case 6, 7 -> "Weekend";
+            default -> "Invalid entry";
+        };
+        System.out.println(type);
+
     }
 }
