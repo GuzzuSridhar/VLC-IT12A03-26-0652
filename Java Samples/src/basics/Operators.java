@@ -16,11 +16,14 @@ public class Operators {
 
         int x = 10, y = 20, res = 0;
 
+        System.out.println("----------------Arithmetic Operators----------");
+
         System.out.println(x + y); // addition
         System.out.println(x - y); // Subtraction
         System.out.println(x * y); // Multiplication
         System.out.println(x / y); // Division
         System.out.println(x % y); // Modulus
+
         System.out.println("----------------Increment and Decrement----------");
         // increment (post and pre)
         res = x++; // use the current value of x in the expression and then increment
@@ -39,6 +42,35 @@ public class Operators {
         res = --x; // first decrement and then use the value of x in this expression
         System.out.println(res); // 10
         System.out.println(x); // 10
+
+        System.out.println("----------------Assignment Operators----------");
+
+        // Assignment Operators
+        // = += -= *= /= %=
+
+        // equals
+        x = 30;
+        y = 20;
+
+        // +=
+        x += 10;
+        System.out.println(x); // 40
+
+        // -=
+        x -= 10;
+        System.out.println(x);
+
+        // *=
+        x *= 10;
+        System.out.println(x);
+
+        // /=
+        x /= 10;
+        System.out.println(x);
+
+        // %=
+        x %= 10;
+        System.out.println(x);
 
     }
 }
