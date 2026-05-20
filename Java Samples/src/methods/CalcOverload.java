@@ -1,0 +1,41 @@
+package methods;
+
+public class CalcOverload {
+    // Method Overloading
+    // Compile time polymorphism
+    // Method with same name but different
+    // 1. # arguments
+    // 2. Types of arguments
+    // 3. Sequence of arguments (types)
+
+    public int add(int i, int j) {
+        return i + j;
+    }
+
+    // overloaded method
+    public int add(int i, int j, int k) {
+        return i + j + k;
+    }
+
+    public int add(int i, int j, int k, int l) {
+        return i + j + k;
+    }
+
+    // unliminted arguments (var args)
+    public int add(int... n) { // int[] n
+        int res = 0;
+        for (int i : n) {
+            res += i;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        CalcOverload co = new CalcOverload();
+        co.add(10, 20, 60);
+        co.add(10, 20, 60, 80);
+        co.add(10, 20);
+        co.add(1, 2, 3, 4, 5, 6, 67, 7, 8, 9, 954, 56, 67, 78, 55);
+    }
+
+}
