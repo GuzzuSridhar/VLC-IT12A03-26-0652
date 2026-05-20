@@ -12,7 +12,7 @@ public class CalcOverload {
         return i + j;
     }
 
-    // overloaded method
+    // overloaded method (Change count of arguments)
     public int add(int i, int j, int k) {
         return i + j + k;
     }
