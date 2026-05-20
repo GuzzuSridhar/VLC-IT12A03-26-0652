@@ -1,6 +1,7 @@
 package StringObject;
 
 public class CreateStrings {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // 2 ways of declaring Strings
         /*
