@@ -30,12 +30,28 @@ public class CalcOverload {
         return res;
     }
 
+    // changing type of argument
+    public double add(double i, double j) {
+        return i + j;
+    }
+
+    public double add(int x, double y) {
+        return x + y;
+    }
+
+    // change sequence of arguments
+    public double add(double y, int x) {
+        return x + y;
+    }
+
     public static void main(String[] args) {
         CalcOverload co = new CalcOverload();
         co.add(10, 20, 60);
         co.add(10, 20, 60, 80);
         co.add(10, 20);
         co.add(1, 2, 3, 4, 5, 6, 67, 7, 8, 9, 954, 56, 67, 78, 55);
+        co.add(10, 88.5);
+        co.add(10.88, 88);
     }
 
 }
