@@ -1,5 +1,6 @@
 package accessmodifier.packageone;
 
+@SuppressWarnings("unused")
 public class ClassOne {
     // feilds
     private int privateFeild;
