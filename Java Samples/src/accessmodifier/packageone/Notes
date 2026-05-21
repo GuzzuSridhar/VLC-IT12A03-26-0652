@@ -1,9 +1,9 @@
 4 Access modifiers in Java
 
-1. public
-2. Private
-3. default
-4. protected
+1. public -- Everywhere
+2. Private -- Same class
+3. default -- same package
+4. protected -- subclass
 
 are applicable to
 Classes
