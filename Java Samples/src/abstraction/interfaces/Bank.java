@@ -5,4 +5,8 @@ public interface Bank {
 
     double rdInterest(double depAmt, int period);
 
+    default double ccInterest(double roi) {
+        return 2.5;
+    }
+
 }

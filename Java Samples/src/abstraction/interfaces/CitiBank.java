@@ -18,14 +18,20 @@ public class CitiBank implements Bank {
         return interestPaid;
     }
 
+    // @Override
+    // public double ccInterest(double roi) {
+    // return 12.5;
+    // }
+
     // banks own logic
     void welcome() {
-        System.out.println("Welcome to Citi Bank");
+        System.out.println("**********Welcome to Citi Bank*****************");
     }
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         CitiBank citiBank = new CitiBank();
+        citiBank.welcome();
         System.out.print("Please Enter a Deposit Type (FD/RD): ");
         String depType = scan.next();
         if (depType.equalsIgnoreCase("FD")) {
