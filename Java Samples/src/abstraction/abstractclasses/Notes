@@ -1,0 +1,4 @@
+Abstract classes can have both conccrete and abstract methods
+
+Abstract classes cannot be instantiated
+Instead create an instance of the class extending the abstract class
