@@ -37,6 +37,7 @@ public class CitiBank implements Bank, Mas {
         Scanner scan = new Scanner(System.in);
         CitiBank citiBank = new CitiBank();
         citiBank.welcome();
+        Mas.sayHello();
         System.out.print("Please Enter a Deposit Type (FD/RD): ");
         String depType = scan.next();
         if (depType.equalsIgnoreCase("FD")) {
