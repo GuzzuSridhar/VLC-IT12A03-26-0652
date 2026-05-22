@@ -2,16 +2,16 @@ package abstraction.interfaces;
 
 import java.util.Scanner;
 
-public class CitiBank implements Bank {
+public class CitiBank implements Bank, Mas {
 
-    @Override
+    // @Override
     public double fdInterest(double depAmt, int period) {
         double roi = 3.5;
         double interestPaid = (depAmt * period * roi) / 100;
         return interestPaid;
     }
 
-    @Override
+    // @Override
     public double rdInterest(double depAmt, int period) {
         double roi = 2.5;
         double interestPaid = (depAmt * period * roi) / 100;
@@ -22,6 +22,11 @@ public class CitiBank implements Bank {
     // public double ccInterest(double roi) {
     // return 12.5;
     // }
+
+    @Override
+    public boolean archive(int acctno) {
+        return true;
+    }
 
     // banks own logic
     void welcome() {

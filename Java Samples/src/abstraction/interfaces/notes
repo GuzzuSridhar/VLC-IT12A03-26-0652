@@ -1,2 +1,9 @@
 Abstract class -- only has a definition of methods and no implementation
 Concrete class -- fully implemented methods
+
+A class can implement multiple interfaces
+Interface pre Java 9 versions can obly have abstract methods
+post java 9 interfaces can have
+default methods -- concrete
+Static methods -- concrete
+
